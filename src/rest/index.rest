@@ -1,0 +1,27 @@
+#create
+GET http://localhost:3000/joyas?limits='2'&page=1&order_by=stock_ASC
+Content-Type: application/json
+
+###
+
+POST https://api.example.com/medicamentos
+Content-Type: application/json
+
+{
+  "nombre": "Paracetamol",
+  "precio": 5.99,
+  "stock": 100
+}
+
+###
+
+PUT https://api.example.com/medicamentos/1
+Content-Type: application/json
+
+{
+  "precio": 6.49
+}
+
+###
+
+DELETE https://api.example.com/medicamentos/2
